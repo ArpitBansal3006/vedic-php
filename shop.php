@@ -236,7 +236,7 @@ $(document).ready(function() {
         });
 
         // Update total price
-        $('#cart-total').text(₹${total.toFixed(2)});
+        $('#cart-total').text(`₹${total.toFixed(2)}`);
         $('#checkout-btn').prop('disabled', cart.length === 0);
         
         // If cart is empty, show a message
