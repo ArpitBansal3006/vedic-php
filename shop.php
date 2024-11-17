@@ -206,6 +206,7 @@
 $(document).ready(function() {
     let cart = [];
     
+    // Update the cart display
     function updateCart() {
         const cartItems = $('#cart-items');
         cartItems.empty();
@@ -234,7 +235,8 @@ $(document).ready(function() {
             `);
         });
 
-        $('#cart-total').text(₹${total});
+        // Update total price
+        $('#cart-total').text(₹${total.toFixed(2)});
         $('#checkout-btn').prop('disabled', cart.length === 0);
         
         // If cart is empty, show a message
@@ -247,6 +249,7 @@ $(document).ready(function() {
         }
     }
 
+    // Add product to cart when button is clicked
     $('.add-to-cart-btn').on('click', function() {
         const button = $(this);
         const productId = button.data('product-id');
@@ -277,6 +280,7 @@ $(document).ready(function() {
         }, 500);
     });
 
+    // Increase quantity
     $(document).on('click', '.increase-qty', function() {
         const cartItem = $(this).closest('.cart-item');
         const productId = cartItem.data('product-id');
@@ -287,6 +291,7 @@ $(document).ready(function() {
         }
     });
 
+    // Decrease quantity
     $(document).on('click', '.decrease-qty', function() {
         const cartItem = $(this).closest('.cart-item');
         const productId = cartItem.data('product-id');
@@ -309,17 +314,19 @@ $(document).ready(function() {
         }
     });
 
+    // Remove item from cart
     $(document).on('click', '.cart-item-remove', function() {
         const cartItem = $(this).closest('.cart-item');
         const productId = cartItem.data('product-id');
         
-        // Add a fade out animation before removing
+        // Add a fade-out animation before removing
         cartItem.fadeOut(300, function() {
             cart = cart.filter(item => item.id !== productId);
             updateCart();
         });
     });
 
+    // Checkout button
     $('#checkout-btn').on('click', function() {
         if (cart.length > 0) {
             // Add checkout functionality here
