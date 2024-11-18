@@ -190,7 +190,7 @@ include "layout/header.php";
         <!-- Contact Us Section -->
         <div class="contact">
             <h2>Contact Us</h2>
-            <p>Have questions? Reach out to us at support@vediccollections.com or call us at +91-xxxxxxxxxx.</p>
+            <p>Have questions? Reach out to us at support@vediccollections.com or call us at +91-7417024773</p>
         </div>
 
     </div>

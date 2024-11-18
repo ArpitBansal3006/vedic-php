@@ -35,10 +35,10 @@
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <h5 class="text-uppercase mb-3">Contact Us</h5>
                 <ul class="list-unstyled">
-                    <li><a href="tel:+1234567890" class="text-white">+1 (234) 567-890</a></li>
+                    <li><a href="tel:+1234567890" class="text-white">+91 7417024773</a></li>
                     <li><a href="mailto:info@vediccollections.com" class="text-white">info@vediccollections.com</a></li>
-                    <li class="text-white">123 Temple Street</li>
-                    <li class="text-white">Spiritual City, SP 12345</li>
+                    <li class="text-white">Panchsheel Colony</li>
+                    <li class="text-white">Meerut </li>
                 </ul>
             </div>
         </div>
